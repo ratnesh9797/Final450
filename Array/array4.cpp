@@ -17,6 +17,7 @@ int main () {
         cin >> array[i];
     }
 
+    // holding the number of 0, 1 and 2 in temp array
     for (int i=0; i<n; i++){
         if(array[i]==0){
             temp[0]++;
@@ -36,7 +37,8 @@ int main () {
         
         
     }
-    // cout<<temp[0]<<temp[1]<<temp[2]<<endl;
+
+    // rearranging main array
     int i;
     for (i=0; i<temp[0]; i++){
         array[i]=0;
@@ -48,6 +50,7 @@ int main () {
         array[i]=2;
     }
 
+    // printing the result
     cout << "printing the result" << endl;
     for (int i=0; i<n; i++){
         cout << array[i] << endl;
